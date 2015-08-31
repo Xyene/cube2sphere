@@ -1,9 +1,8 @@
 cube2sphere
 ===========
 
-``cube2sphere`` is a Python script to map an equirectangular
-(cylindrical projection, skysphere) map into 6 cube (cubemap, skybox)
-faces.
+``cube2sphere`` is a Python script to map 6 cube (cubemap, skybox)
+faces into an equirectangular (cylindrical projection, skysphere) map.
 
 Usage
 =====
