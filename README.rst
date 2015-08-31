@@ -77,7 +77,7 @@ Install `Blender`_, and add ``blender.exe`` to ``PATH``. Finally,
 
 ::
 
-    pip install sphere2cube
+    pip install cube2sphere
 
 Linux
 -----
@@ -85,7 +85,7 @@ Linux
 ::
 
     $ apt-get install blender
-    $ pip install sphere2cube
+    $ pip install cube2sphere
 
 Mac OS X
 --------
@@ -94,6 +94,6 @@ Similar to Windows, install `Blender`_, and add the ``blender`` executable to ``
 
 ::
 
-    $ pip install sphere2cube
+    $ pip install cube2sphere
 
 .. _Blender: https://www.blender.org/
