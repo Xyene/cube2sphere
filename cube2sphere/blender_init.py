@@ -5,8 +5,11 @@ import sys
 import math
 
 
-bpy.context.scene.cycles.resolution_x = int(sys.argv[-5])
-bpy.context.scene.cycles.resolution_y = int(sys.argv[-4])
+for scene in bpy.data.scenes:
+    scene.render.resolution_x = int(sys.argv[-5])
+    scene.render.resolution_y = int(sys.argv[-4])
+    scene.render.resolution_percentage = 100
+    scene.render.use_border = False
 
 for i, name in enumerate(['bottom', 'top', 'left', 'right', 'back', 'front']):
     bpy.data.images[name].filepath = "%s" % sys.argv[-6 - i]
