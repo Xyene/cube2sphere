@@ -48,7 +48,7 @@ def main():
     faces = [_args.front, _args.back, _args.right, _args.left, _args.top, _args.bottom]
     for i in range(len(faces)):
         face = faces[i]
-        face = faces if os.path.isabs(face) else os.path.join(os.getcwd(), face)
+        face = faces[i] if os.path.isabs(face) else os.path.join(os.getcwd(), face)
         faces[i] = face
 
     try:
