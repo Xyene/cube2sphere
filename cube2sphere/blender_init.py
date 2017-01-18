@@ -11,7 +11,7 @@ for scene in bpy.data.scenes:
     scene.render.resolution_percentage = 100
     scene.render.use_border = False
 
-for i, name in enumerate(['bottom', 'top', 'left', 'right', 'back', 'front']):
+for i, name in enumerate(['bottom', 'top', 'right', 'left', 'back', 'front']):
     bpy.data.images[name].filepath = "%s" % sys.argv[-6 - i]
 
 camera = bpy.data.objects["Camera"]

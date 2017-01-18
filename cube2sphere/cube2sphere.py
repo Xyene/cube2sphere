@@ -14,7 +14,7 @@ def main():
     _parser = argparse.ArgumentParser(prog='cube2sphere', description='''
         Maps 6 cube (cubemap, skybox) faces into an equirectangular (cylindrical projection, skysphere) map.
     ''')
-    for f in ['front', 'back', 'right', 'left', 'top', 'bottom']:
+    for f in ['front', 'back', 'left', 'right', 'top', 'bottom']:
         _parser.add_argument(f, type=str, metavar='<%s>' % f, help='source %s cube face filename' % f)
     _parser.add_argument('-v', '--version', action='version', version=__version__)
     _parser.add_argument('-r', '--resolution', type=int, nargs=2, default=[1024, 512], metavar=('<width>', '<height>'),
@@ -45,7 +45,7 @@ def main():
 
     out = open(os.devnull, 'w') if not _args.verbose else None
 
-    faces = [_args.front, _args.back, _args.right, _args.left, _args.top, _args.bottom]
+    faces = [_args.front, _args.back, _args.left, _args.right, _args.top, _args.bottom]
     for i in range(len(faces)):
         face = faces[i]
         face = faces[i] if os.path.isabs(face) else os.path.join(os.getcwd(), face)
