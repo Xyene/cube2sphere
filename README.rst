@@ -1,8 +1,13 @@
-cube2sphere
+cube2sphere |PyPI version| |PyPI|
 ===========
 
+.. |PyPI version| image:: https://badge.fury.io/py/cube2sphere.svg
+   :target: https://pypi.python.org/pypi/cube2sphere
+.. |PyPI| image:: https://img.shields.io/pypi/pyversions/cube2sphere.svg
+   :target: https://pypi.python.org/pypi/cube2sphere
+
 ``cube2sphere`` is a Python script to map 6 cube (cubemap, skybox)
-faces into an equirectangular (cylindrical projection, skysphere) map.
+faces into an equirectangular (cylindrical projection, skysphere) map. See also `cube2sphere`_.
 
 Usage
 =====
@@ -65,7 +70,7 @@ This would generate ``stitched.tga`` in the working directory.
 Installation
 ============
 
-``cube2sphere`` can be easily installed with ``pip``.
+``cube2sphere`` can be easily installed with ``pip``. It requires a Python 3 installation.
 
 It assumes that Blender is installed and the ``blender`` executable is listed in the system PATH environment variable. If it is not possible for PATH to be edited (as in the case of an unprivileged user), the path to the ``blender`` executable may instead be passed through the ``-b`` flag.
 
@@ -95,4 +100,5 @@ Similar to Windows, install `Blender`_, and add the ``blender`` executable to ``
 
     $ pip install cube2sphere
 
+.. _cube2sphere: https://github.com/Xyene/cube2sphere
 .. _Blender: https://www.blender.org/
