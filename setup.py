@@ -4,8 +4,8 @@ __author__ = 'Xyene'
 from setuptools import setup, find_packages
 import os
 
-with open('README.rst') as file:
-    long_description = file.read()
+with open(os.path.join(os.path.dirname(__file__), 'README.md')) as fh:
+    long_description = fh.read()
 
 with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'cube2sphere', 'version.py')) as version:
     exec (version.read())
@@ -14,6 +14,7 @@ setup(name='cube2sphere',
       version=__version__,
       description='Utility to map 6 cube (cubemap, skybox) faces into an equirectangular (cylindrical projection, skysphere) map',
       long_description=long_description,
+      long_description_content_type='text/markdown',
       author='Tudor Brindus',
       author_email='me@tbrindus.ca',
       url='http://github.com/Xyene/cube2sphere',
