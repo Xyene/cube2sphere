@@ -85,7 +85,10 @@ Linux
 Mac OS X
 --------
 
-Similar to Windows, install Blender, and add the `blender` executable
-to `$PATH`. Then,
+Install Blender.app to `/Applications`, then install:
 
     $ pip install cube2sphere
+
+Use the `--blender-path/-b` argument like this:
+    
+    $ cube2sphere -b /Applications/Blender.app/Contents/MacOS/Blender # [...] other params
